@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="14C1514" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Players" representedClassName="Players" syncable="YES">
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="team" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Teams" inverseName="players" inverseEntity="Teams" syncable="YES"/>
+    </entity>
+    <entity name="Teams" representedClassName="Teams" syncable="YES">
+        <attribute name="colorPrimary" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="colorSecondary" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="isCurrentSeason" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="leagueName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="losses" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="season" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="teamName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wins" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="players" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Players" inverseName="team" inverseEntity="Players" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Players" positionX="160" positionY="27" width="128" height="103"/>
+        <element name="Teams" positionX="-36" positionY="36" width="128" height="178"/>
+    </elements>
 </model>

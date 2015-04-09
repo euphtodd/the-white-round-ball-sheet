@@ -14,6 +14,12 @@
 		CC3217431AD6EE1800ABAD4B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC3217421AD6EE1800ABAD4B /* Images.xcassets */; };
 		CC3217461AD6EE1800ABAD4B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC3217441AD6EE1800ABAD4B /* LaunchScreen.xib */; };
 		CC3217521AD6EE1800ABAD4B /* TheVolleyballSheetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3217511AD6EE1800ABAD4B /* TheVolleyballSheetTests.swift */; };
+		CC32175E1AD6F64A00ABAD4B /* TeamDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC32175D1AD6F64A00ABAD4B /* TeamDetailViewController.swift */; };
+		CC3217601AD6F66400ABAD4B /* AddTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC32175F1AD6F66400ABAD4B /* AddTeamViewController.swift */; };
+		CCE2F97A1AD706410021E70C /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC32175B1AD6F23900ABAD4B /* TeamViewController.swift */; };
+		CCE2F97B1AD709AE0021E70C /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3217611AD6F89D00ABAD4B /* TeamTableViewCell.swift */; };
+		CCE2F9801AD7201D0021E70C /* Teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE2F97F1AD7201D0021E70C /* Teams.swift */; };
+		CCE2F9821AD723590021E70C /* Players.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE2F9811AD723590021E70C /* Players.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,12 @@
 		CC32174B1AD6EE1800ABAD4B /* TheVolleyballSheetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheVolleyballSheetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC3217501AD6EE1800ABAD4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC3217511AD6EE1800ABAD4B /* TheVolleyballSheetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheVolleyballSheetTests.swift; sourceTree = "<group>"; };
+		CC32175B1AD6F23900ABAD4B /* TeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
+		CC32175D1AD6F64A00ABAD4B /* TeamDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamDetailViewController.swift; sourceTree = "<group>"; };
+		CC32175F1AD6F66400ABAD4B /* AddTeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTeamViewController.swift; sourceTree = "<group>"; };
+		CC3217611AD6F89D00ABAD4B /* TeamTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
+		CCE2F97F1AD7201D0021E70C /* Teams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Teams.swift; path = ../Teams.swift; sourceTree = "<group>"; };
+		CCE2F9811AD723590021E70C /* Players.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Players.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +93,16 @@
 			children = (
 				CC3217381AD6EE1800ABAD4B /* AppDelegate.swift */,
 				CC32173D1AD6EE1800ABAD4B /* ViewController.swift */,
+				CC32175B1AD6F23900ABAD4B /* TeamViewController.swift */,
+				CC32175D1AD6F64A00ABAD4B /* TeamDetailViewController.swift */,
+				CC32175F1AD6F66400ABAD4B /* AddTeamViewController.swift */,
 				CC32173F1AD6EE1800ABAD4B /* Main.storyboard */,
+				CC3217611AD6F89D00ABAD4B /* TeamTableViewCell.swift */,
 				CC3217421AD6EE1800ABAD4B /* Images.xcassets */,
 				CC3217441AD6EE1800ABAD4B /* LaunchScreen.xib */,
 				CC32173A1AD6EE1800ABAD4B /* TheVolleyballSheet.xcdatamodeld */,
+				CCE2F9811AD723590021E70C /* Players.swift */,
+				CCE2F97F1AD7201D0021E70C /* Teams.swift */,
 				CC3217361AD6EE1800ABAD4B /* Supporting Files */,
 			);
 			path = TheVolleyballSheet;
@@ -215,7 +233,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCE2F9821AD723590021E70C /* Players.swift in Sources */,
+				CCE2F9801AD7201D0021E70C /* Teams.swift in Sources */,
+				CCE2F97A1AD706410021E70C /* TeamViewController.swift in Sources */,
+				CC32175E1AD6F64A00ABAD4B /* TeamDetailViewController.swift in Sources */,
+				CC3217601AD6F66400ABAD4B /* AddTeamViewController.swift in Sources */,
 				CC32173E1AD6EE1800ABAD4B /* ViewController.swift in Sources */,
+				CCE2F97B1AD709AE0021E70C /* TeamTableViewCell.swift in Sources */,
 				CC3217391AD6EE1800ABAD4B /* AppDelegate.swift in Sources */,
 				CC32173C1AD6EE1800ABAD4B /* TheVolleyballSheet.xcdatamodeld in Sources */,
 			);
@@ -411,6 +435,7 @@
 				CC3217571AD6EE1800ABAD4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC3217581AD6EE1800ABAD4B /* Build configuration list for PBXNativeTarget "TheVolleyballSheetTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +444,7 @@
 				CC32175A1AD6EE1800ABAD4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
