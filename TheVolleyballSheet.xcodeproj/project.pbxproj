@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC3217391AD6EE1800ABAD4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3217381AD6EE1800ABAD4B /* AppDelegate.swift */; };
+		CC32173C1AD6EE1800ABAD4B /* TheVolleyballSheet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC32173A1AD6EE1800ABAD4B /* TheVolleyballSheet.xcdatamodeld */; };
+		CC32173E1AD6EE1800ABAD4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC32173D1AD6EE1800ABAD4B /* ViewController.swift */; };
+		CC3217411AD6EE1800ABAD4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC32173F1AD6EE1800ABAD4B /* Main.storyboard */; };
+		CC3217431AD6EE1800ABAD4B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC3217421AD6EE1800ABAD4B /* Images.xcassets */; };
+		CC3217461AD6EE1800ABAD4B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC3217441AD6EE1800ABAD4B /* LaunchScreen.xib */; };
+		CC3217521AD6EE1800ABAD4B /* TheVolleyballSheetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3217511AD6EE1800ABAD4B /* TheVolleyballSheetTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC32174C1AD6EE1800ABAD4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC32172B1AD6EE1800ABAD4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC3217321AD6EE1800ABAD4B;
+			remoteInfo = TheVolleyballSheet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CC3217331AD6EE1800ABAD4B /* TheVolleyballSheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheVolleyballSheet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC3217371AD6EE1800ABAD4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC3217381AD6EE1800ABAD4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CC32173B1AD6EE1800ABAD4B /* TheVolleyballSheet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TheVolleyballSheet.xcdatamodel; sourceTree = "<group>"; };
+		CC32173D1AD6EE1800ABAD4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CC3217401AD6EE1800ABAD4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC3217421AD6EE1800ABAD4B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CC3217451AD6EE1800ABAD4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CC32174B1AD6EE1800ABAD4B /* TheVolleyballSheetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheVolleyballSheetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC3217501AD6EE1800ABAD4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC3217511AD6EE1800ABAD4B /* TheVolleyballSheetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheVolleyballSheetTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC3217301AD6EE1800ABAD4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC3217481AD6EE1800ABAD4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC32172A1AD6EE1800ABAD4B = {
+			isa = PBXGroup;
+			children = (
+				CC3217351AD6EE1800ABAD4B /* TheVolleyballSheet */,
+				CC32174E1AD6EE1800ABAD4B /* TheVolleyballSheetTests */,
+				CC3217341AD6EE1800ABAD4B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC3217341AD6EE1800ABAD4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC3217331AD6EE1800ABAD4B /* TheVolleyballSheet.app */,
+				CC32174B1AD6EE1800ABAD4B /* TheVolleyballSheetTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC3217351AD6EE1800ABAD4B /* TheVolleyballSheet */ = {
+			isa = PBXGroup;
+			children = (
+				CC3217381AD6EE1800ABAD4B /* AppDelegate.swift */,
+				CC32173D1AD6EE1800ABAD4B /* ViewController.swift */,
+				CC32173F1AD6EE1800ABAD4B /* Main.storyboard */,
+				CC3217421AD6EE1800ABAD4B /* Images.xcassets */,
+				CC3217441AD6EE1800ABAD4B /* LaunchScreen.xib */,
+				CC32173A1AD6EE1800ABAD4B /* TheVolleyballSheet.xcdatamodeld */,
+				CC3217361AD6EE1800ABAD4B /* Supporting Files */,
+			);
+			path = TheVolleyballSheet;
+			sourceTree = "<group>";
+		};
+		CC3217361AD6EE1800ABAD4B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC3217371AD6EE1800ABAD4B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC32174E1AD6EE1800ABAD4B /* TheVolleyballSheetTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC3217511AD6EE1800ABAD4B /* TheVolleyballSheetTests.swift */,
+				CC32174F1AD6EE1800ABAD4B /* Supporting Files */,
+			);
+			path = TheVolleyballSheetTests;
+			sourceTree = "<group>";
+		};
+		CC32174F1AD6EE1800ABAD4B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC3217501AD6EE1800ABAD4B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC3217321AD6EE1800ABAD4B /* TheVolleyballSheet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC3217551AD6EE1800ABAD4B /* Build configuration list for PBXNativeTarget "TheVolleyballSheet" */;
+			buildPhases = (
+				CC32172F1AD6EE1800ABAD4B /* Sources */,
+				CC3217301AD6EE1800ABAD4B /* Frameworks */,
+				CC3217311AD6EE1800ABAD4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheVolleyballSheet;
+			productName = TheVolleyballSheet;
+			productReference = CC3217331AD6EE1800ABAD4B /* TheVolleyballSheet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC32174A1AD6EE1800ABAD4B /* TheVolleyballSheetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC3217581AD6EE1800ABAD4B /* Build configuration list for PBXNativeTarget "TheVolleyballSheetTests" */;
+			buildPhases = (
+				CC3217471AD6EE1800ABAD4B /* Sources */,
+				CC3217481AD6EE1800ABAD4B /* Frameworks */,
+				CC3217491AD6EE1800ABAD4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC32174D1AD6EE1800ABAD4B /* PBXTargetDependency */,
+			);
+			name = TheVolleyballSheetTests;
+			productName = TheVolleyballSheetTests;
+			productReference = CC32174B1AD6EE1800ABAD4B /* TheVolleyballSheetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC32172B1AD6EE1800ABAD4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Todd McCready";
+				TargetAttributes = {
+					CC3217321AD6EE1800ABAD4B = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					CC32174A1AD6EE1800ABAD4B = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = CC3217321AD6EE1800ABAD4B;
+					};
+				};
+			};
+			buildConfigurationList = CC32172E1AD6EE1800ABAD4B /* Build configuration list for PBXProject "TheVolleyballSheet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC32172A1AD6EE1800ABAD4B;
+			productRefGroup = CC3217341AD6EE1800ABAD4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC3217321AD6EE1800ABAD4B /* TheVolleyballSheet */,
+				CC32174A1AD6EE1800ABAD4B /* TheVolleyballSheetTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC3217311AD6EE1800ABAD4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC3217411AD6EE1800ABAD4B /* Main.storyboard in Resources */,
+				CC3217461AD6EE1800ABAD4B /* LaunchScreen.xib in Resources */,
+				CC3217431AD6EE1800ABAD4B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC3217491AD6EE1800ABAD4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC32172F1AD6EE1800ABAD4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC32173E1AD6EE1800ABAD4B /* ViewController.swift in Sources */,
+				CC3217391AD6EE1800ABAD4B /* AppDelegate.swift in Sources */,
+				CC32173C1AD6EE1800ABAD4B /* TheVolleyballSheet.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC3217471AD6EE1800ABAD4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC3217521AD6EE1800ABAD4B /* TheVolleyballSheetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC32174D1AD6EE1800ABAD4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC3217321AD6EE1800ABAD4B /* TheVolleyballSheet */;
+			targetProxy = CC32174C1AD6EE1800ABAD4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC32173F1AD6EE1800ABAD4B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC3217401AD6EE1800ABAD4B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CC3217441AD6EE1800ABAD4B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC3217451AD6EE1800ABAD4B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC3217531AD6EE1800ABAD4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		CC3217541AD6EE1800ABAD4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC3217561AD6EE1800ABAD4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TheVolleyballSheet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CC3217571AD6EE1800ABAD4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TheVolleyballSheet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CC3217591AD6EE1800ABAD4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TheVolleyballSheetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheVolleyballSheet.app/TheVolleyballSheet";
+			};
+			name = Debug;
+		};
+		CC32175A1AD6EE1800ABAD4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TheVolleyballSheetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheVolleyballSheet.app/TheVolleyballSheet";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC32172E1AD6EE1800ABAD4B /* Build configuration list for PBXProject "TheVolleyballSheet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC3217531AD6EE1800ABAD4B /* Debug */,
+				CC3217541AD6EE1800ABAD4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC3217551AD6EE1800ABAD4B /* Build configuration list for PBXNativeTarget "TheVolleyballSheet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC3217561AD6EE1800ABAD4B /* Debug */,
+				CC3217571AD6EE1800ABAD4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CC3217581AD6EE1800ABAD4B /* Build configuration list for PBXNativeTarget "TheVolleyballSheetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC3217591AD6EE1800ABAD4B /* Debug */,
+				CC32175A1AD6EE1800ABAD4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CC32173A1AD6EE1800ABAD4B /* TheVolleyballSheet.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CC32173B1AD6EE1800ABAD4B /* TheVolleyballSheet.xcdatamodel */,
+			);
+			currentVersion = CC32173B1AD6EE1800ABAD4B /* TheVolleyballSheet.xcdatamodel */;
+			path = TheVolleyballSheet.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CC32172B1AD6EE1800ABAD4B /* Project object */;
+}
