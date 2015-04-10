@@ -31,6 +31,19 @@ class TeamViewController: UIViewController, UITableViewDataSource, UITableViewDe
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showTeamDetail" {
+//            let detailVC: TeamDetailViewController = segue.destinationViewController as TeamDetailViewController
+//            let indexPath = self.tableView.indexPathForSelectedRow()
+//            let thisTeam = fetchedResultsController.objectAtIndexPath(indexPath!) as Teams
+//            detailVC.detailTaskModel = thisTeam
+//            detailVC.delegate = self
+        } else if segue.identifier == "showTeamAdd" {
+            let addTeamVC:AddTeamViewController = segue.destinationViewController as AddTeamViewController
+            addTeamVC.delegate = self
+        }
+    }
 
     @IBAction func addTeamBarButtonItemPressed(sender: UIBarButtonItem) {
         self.performSegueWithIdentifier("showTeamAdd", sender: self)

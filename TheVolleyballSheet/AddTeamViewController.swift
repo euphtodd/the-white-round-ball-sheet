@@ -61,6 +61,7 @@ class AddTeamViewController: UIViewController {
             println(res)
         }
 
+
         self.dismissViewControllerAnimated(true, completion: nil)
         delegate?.addTeam("Team Added")
     }
