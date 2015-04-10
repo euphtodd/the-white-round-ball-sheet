@@ -98,7 +98,7 @@ class TeamViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     //Helper
     
-    func taskFetchRequest() -> NSFetchRequest {
+    func teamFetchRequest() -> NSFetchRequest {
         let fetchRequest = NSFetchRequest(entityName: "Teams")
         let sortDescriptor = NSSortDescriptor(key: "teamName", ascending: true)
         let currentSeasonDescriptor = NSSortDescriptor(key: "isCurrentSeason", ascending: false)
@@ -108,7 +108,7 @@ class TeamViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func getFetchedResultsController() -> NSFetchedResultsController {
-        fetchedResultsController = NSFetchedResultsController(fetchRequest: taskFetchRequest(), managedObjectContext: managedObjectContext, sectionNameKeyPath: "isCurrentSeason", cacheName: nil)
+        fetchedResultsController = NSFetchedResultsController(fetchRequest: teamFetchRequest(), managedObjectContext: managedObjectContext, sectionNameKeyPath: "isCurrentSeason", cacheName: nil)
         return fetchedResultsController
     }
     
@@ -116,6 +116,7 @@ class TeamViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func addTeam(message: String) {
         showAlert(message: message)
     }
+    
     func addTeamCanceled(message: String) {
         showAlert(message: message)
     }
@@ -125,4 +126,5 @@ class TeamViewController: UIViewController, UITableViewDataSource, UITableViewDe
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
         self.presentViewController(alert, animated: true, completion: nil)
     }
+
 }
