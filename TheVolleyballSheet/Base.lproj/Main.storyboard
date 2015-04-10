@@ -81,7 +81,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="100" id="Zvh-Oh-eMJ" customClass="TeamTableViewCell" customModule="TheVolleyballSheet" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" rowHeight="100" id="Zvh-Oh-eMJ" customClass="TeamTableViewCell" customModule="TheVolleyballSheet" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zvh-Oh-eMJ" id="E0f-Sq-Iy5">
@@ -131,6 +131,7 @@
                                             <outlet property="seasonLabel" destination="INq-hk-iVY" id="p1E-Lv-TF4"/>
                                             <outlet property="teamNameLabel" destination="glY-OU-8n3" id="PJX-BF-s6i"/>
                                             <outlet property="winsLabel" destination="1hN-DV-DDR" id="kCv-47-c9m"/>
+                                            <segue destination="Nbl-a7-jdV" kind="show" identifier="showTeamDetail" id="2g1-Dk-U7I"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -270,8 +271,52 @@
                     <view key="view" contentMode="scaleToFill" id="FJZ-9w-9U1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Team Name" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Nkl-eG-mbJ">
+                                <rect key="frame" x="93" y="129" width="414" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="League Name" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0fi-gw-caf">
+                                <rect key="frame" x="93" y="194" width="414" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Season" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="UJq-4D-qbe">
+                                <rect key="frame" x="93" y="258" width="414" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Is this team currently in season?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Sx-GP-6ok">
+                                <rect key="frame" x="93" y="326" width="247" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XXX-Z0-fa3">
+                                <rect key="frame" x="458" y="321" width="51" height="31"/>
+                            </switch>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="9Yc-bj-838">
+                        <barButtonItem key="leftBarButtonItem" title="Item" systemItem="cancel" id="2gx-2t-ZdB">
+                            <connections>
+                                <action selector="cancelBarButtonItemPressed:" destination="Nbl-a7-jdV" id="Pai-ZZ-L6H"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="LNb-rG-5xn">
+                            <connections>
+                                <action selector="saveBarButtonItemPressed:" destination="Nbl-a7-jdV" id="TNW-kt-q2h"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="inSeasonSwitch" destination="XXX-Z0-fa3" id="Eh1-kn-kbG"/>
+                        <outlet property="leagueNameTextField" destination="0fi-gw-caf" id="dNH-R0-uRV"/>
+                        <outlet property="seasonTextField" destination="UJq-4D-qbe" id="BUg-i7-Mj2"/>
+                        <outlet property="teamNameTextField" destination="Nkl-eG-mbJ" id="XIY-SD-X5v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jZ0-RT-w0m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
