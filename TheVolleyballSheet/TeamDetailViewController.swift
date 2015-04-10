@@ -17,6 +17,7 @@ class TeamDetailViewController: UIViewController {
     
     var detailTeam: Teams!
     var delegate: TeamDetailViewControllerDelegate?
+    let appDelegate = (UIApplication.sharedApplication().delegate as AppDelegate)
 
     @IBOutlet weak var teamNameTextField: UITextField!
     @IBOutlet weak var leagueNameTextField: UITextField!
@@ -48,7 +49,6 @@ class TeamDetailViewController: UIViewController {
     }
     
     @IBAction func saveBarButtonItemPressed(sender: UIBarButtonItem) {
-        let appDelegate = (UIApplication.sharedApplication().delegate as AppDelegate)
         
         detailTeam.teamName = teamNameTextField.text
         detailTeam.leagueName = leagueNameTextField.text
@@ -56,6 +56,21 @@ class TeamDetailViewController: UIViewController {
         detailTeam.isCurrentSeason = self.inSeasonSwitch.on
         
         appDelegate.saveContext()
+        
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    
+    @IBAction func deleteTeamButtonPressed(sender: UIButton) {
+        
+        var alert = UIAlertController(title: "Delete Team", message: "Are you sure you want to delete this team?", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "Delete Team", style: UIAlertActionStyle.Destructive, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    func deleteTeam() {
+        let context = self.appDelegate.managedObjectContext!
+        context.deleteObject(detailTeam)
         
         self.navigationController?.popViewControllerAnimated(true)
     }
